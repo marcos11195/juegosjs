@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="contenedor" role="main" aria-label="Juego Trivial">
+    <header class="encabezado">
+      <h1>🎯 Trivial</h1>
+      <div class="estado">
+        <div class="categoria" aria-live="polite">Categoría: General</div>
+        <div class="marcador" aria-live="polite">Puntos: <span id="puntos">0</span></div>
+      </div>
+      <div class="progreso" aria-label="Progreso">
+        <div class="progreso-barra" style="width: 20%"></div>
+      </div>
+      <div class="contador" aria-live="polite">Pregunta 1 de 5</div>
+    </header>
+
+    <section class="tarjeta-pregunta" aria-labelledby="titulo-pregunta">
+      <h2 id="titulo-pregunta">¿Cuál es la capital de Francia?</h2>
+
+      <ul class="opciones" role="listbox" aria-label="Opciones de respuesta">
+        <li class="opcion" tabindex="0" role="option" aria-selected="false">
+          París
+        </li>
+        <li class="opcion" tabindex="0" role="option" aria-selected="false">
+          Lyon
+        </li>
+        <li class="opcion" tabindex="0" role="option" aria-selected="false">
+          Marsella
+        </li>
+        <li class="opcion" tabindex="0" role="option" aria-selected="false">
+          Toulouse
+        </li>
+      </ul>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+
+      <div class="acciones">
+        <button class="btn primario" id="comprobar" type="button">Comprobar</button>
+        <button class="btn secundario" id="siguiente" type="button" disabled>Siguiente</button>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <a href="../index.html" class="btn-volver">⬅ Volver al Menú</a>
+    </footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

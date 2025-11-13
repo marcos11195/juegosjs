@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Contenedor Versus */
+.versus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.mano {
+  width: 20vw;
+  height: 20vw;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #eee;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+#vs {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+#resultado {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#resultado.ganaste {
+  color: green;
+}
+
+#resultado.perdiste {
+  color: red;
+}
+
+#resultado.empate {
+  color: gray;
+}
+
+.marcadores {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #2980b9;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .versus-container {
+    flex-direction: column; /* jugador arriba, máquina abajo */
+  }
+
+  .mano {
+    width: 40vw;
+    height: 40vw;
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .btn {
+    flex: 1 1 100%;
+    font-size: 1em;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #vs {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  #resultado {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+
+  .marcadores {
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🔄 Conversor de Unidades</h1>
+
+    <!-- Menú para elegir tipo -->
+    <div class="fila">
+      <label for="tipo">Tipo de conversión:</label>
+      <select id="tipo">
+        <option value="temp">Temperatura (C ↔ F)</option>
+        <option value="moneda">Moneda (EUR ↔ USD)</option>
+      </select>
+    </div>
+
+    <!-- Valor a convertir -->
+    <div class="fila">
+      <label for="valor">Valor:</label>
+      <input type="number" id="valor" placeholder="Introduce un valor">
+    </div>
+
+    <!-- Selección origen/destino -->
+    <div class="fila">
+      <label for="origen">De:</label>
+      <select id="origen">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+      </select>
+    </div>
+
+    <div class="fila">
+      <label for="destino">A:</label>
+      <select id="destino">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+      </select>
+    </div>
+
+    <!-- Botón -->
+    <div class="fila">
+      <button onclick="convertir()">Convertir</button>
+    </div>
+
+    <!-- Resultado -->
+    <p id="resultado"></p>
+     <a href="../index.html" class="btn-volver">⬅ Volver al Menú</a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
