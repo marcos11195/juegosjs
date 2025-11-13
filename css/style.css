@@ -1,46 +1,61 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  font-family: 'Orbitron', 'Segoe UI', sans-serif; /* fuente futurista */
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  color: #f0f0f0;
 }
 
 .contenedor {
   text-align: center;
-  background: #fff;
-  padding: 30px;
+  background: rgba(20, 20, 30, 0.85);
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 0 25px #00fff7, 0 0 50px #ff00ff;
+  max-width: 400px;
+  width: 90%;
 }
 
 h1 {
   margin-bottom: 10px;
-  color: #333;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column; 
   gap: 15px;
   margin-top: 20px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 15px 25px;
-  background: #4caf50;
-  color: white;
+  display: block;
+  padding: 15px;
+  background: transparent;
+  color: #00fff7;
   text-decoration: none;
+  border: 2px solid #00fff7;
   border-radius: 8px;
   font-size: 1.1em;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00fff7, inset 0 0 10px #00fff7;
 }
 
 .btn:hover {
-  background: #45a049;
-  transform: translateY(-3px);
+  background: #00fff7;
+  color: #0f0c29;
+  box-shadow: 0 0 20px #ff00ff, inset 0 0 20px #ff00ff;
+  transform: scale(1.05);
 }
